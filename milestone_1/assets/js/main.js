@@ -101,3 +101,4 @@ let icons = [
         family: 'fas'
     }
 ];
+
