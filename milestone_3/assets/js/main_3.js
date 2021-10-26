@@ -127,7 +127,9 @@ let user = document.getElementsByClassName('user')
 
 
 filter.addEventListener('change', function () {
+
     if (filter.value == '2') {
+        removeClassInArray(animal, 'hidden')
         addClassInArray(vegetables, 'hidden')
         addClassInArray(user, 'hidden')
 
