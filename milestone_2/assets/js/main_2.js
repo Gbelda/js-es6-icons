@@ -2,6 +2,7 @@
 Partendo dalla seguente struttura dati, 
 mostriamo in pagina tutte le icone disponibili come da layout. */
 
+
 let icons = [
     {
         name: 'cat',
@@ -108,8 +109,9 @@ icons.forEach((icon) => {
             <i class="${icon.family} ${icon.prefix}${icon.name} ${icon.type}"></i>
             <h6>${(icon.name).toUpperCase()}</h6>
         </div>
-    </div>
-    `
+    </div>`
     document.querySelector('.cards_container').insertAdjacentHTML('beforeend', cardEl)
 });
 
+/* Milestone 2
+Coloriamo le icone per tipo */
