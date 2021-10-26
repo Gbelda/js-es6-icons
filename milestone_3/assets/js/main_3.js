@@ -148,14 +148,23 @@ filter.addEventListener('change', function () {
     }
 })
 
+/**
+ * add a class to elements inside an array
+ * @param {array} array - array where we need to add a class for each element 
+ * @param {string} classEl - name of the class to add
+ */
 function addClassInArray(array, classEl) {
-
     for (let i = 0; i < array.length; i++) {
         const element = array[i];
         element.classList.add(classEl)
     }
 }
 
+/**
+ * remove a class to elements inside an array
+ * @param {array} array - array where we need to remove a class for each element
+ * @param {string} classEl - name of the class to remove
+ */
 function removeClassInArray(array, classEl) {
     for (let i = 0; i < array.length; i++) {
         const element = array[i];
