@@ -102,3 +102,13 @@ let icons = [
     }
 ];
 
+icons.forEach((icon) => {
+    let cardEl = `
+    <div class="card mx-5 mt-4 mb-5">
+        <div class="icon_container">
+            <i class="${icon.family} ${icon.prefix}${icon.name}"></i>
+            <h6>${(icon.name).toUpperCase()}</h6>
+        </div>
+    </div>`
+    document.querySelector('.cards_container').insertAdjacentHTML('beforeend', cardEl)
+});
